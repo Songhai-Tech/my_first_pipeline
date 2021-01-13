@@ -20,6 +20,12 @@ pipeline {
         	steps {
         		echo 'This time I ran the pipeline'
         }
+        }
+        stage('Stage 5') {
+        	steps {
+        		echo 'Shanika needa come grab anais'
+        }
+        }
+        }
     }
-}
-}
+
