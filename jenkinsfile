@@ -26,6 +26,8 @@ pipeline {
         		echo 'Shanika needa come grab anais'
         }
         }
+        stage('Stage 6') {
+        
+        }
         }
     }
-
