@@ -1,5 +1,5 @@
 pipeline {
-    agent any 
+   agent any 
     stages {
         stage('Stage 1') {
             steps {
@@ -9,6 +9,11 @@ pipeline {
         stage('Stage 2') {
         	steps {
         		echo 'This is an Edit made by Woody'
+        	}
+        }
+        stage('Stage 3') {
+        	steps {
+        		echo 'This is the 3rd stage of my first pipeline'
         	}
         }
     }
