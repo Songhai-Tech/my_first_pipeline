@@ -16,5 +16,9 @@ pipeline {
         		echo 'This is the 3rd stage of my first pipeline'
         	}
         }
+        stage('Stage 4')
+        	steps {
+        		echo 'This time I ran the pipeline'
+        }
     }
 }
