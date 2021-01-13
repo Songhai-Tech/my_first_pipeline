@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Stage 6') {
         steps {
-          sh 'sudo yum update -y -t -t'
+          sh 'echo $(date)'
         }
         
  
