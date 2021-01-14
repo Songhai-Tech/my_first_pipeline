@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Git SCM') {
             steps {
-                echo 'Testing Testing' 
+                checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'SudirCreds', url: 'https://github.com/Songhai-Tech/SCSS.git']]])
+ 
                    }      
          }
      }
