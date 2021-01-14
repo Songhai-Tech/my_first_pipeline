@@ -1,9 +1,9 @@
 pipeline {
    agent any 
     stages {
-        stage('Stage 1') {
+        stage('Git SCM') {
             steps {
-                echo 'Im Sulayman' 
+                echo 'Testing Testing' 
                    }      
          }
      }
