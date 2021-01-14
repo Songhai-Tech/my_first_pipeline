@@ -4,34 +4,7 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Im Sulayman' 
-        }
-        }
-        stage('Stage 2') {
-        	steps {
-        		echo 'This is an Edit made by Woody'
-        	}
-        }
-        stage('Stage 3') {
-        	steps {
-        		echo 'This is the 3rd stage of my first pipeline'
-        	}
-        }
-        stage('Stage 4') {
-        	steps {
-        		echo 'This time I ran the pipeline'
-        }
-        }
-        stage('Stage 5') {
-        	steps {
-        		echo 'Shanika needa come grab anais'
-        }
-        }
-        stage('Stage 6') {
-        steps {
-          sh 'echo $(date)'
-        }
-        
- 
-        }       
-        }
+                   }      
+         }
+     }
     }
