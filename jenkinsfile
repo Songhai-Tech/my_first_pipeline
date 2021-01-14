@@ -11,8 +11,8 @@ pipeline {
          
        stage('BuildApp') {
             steps {
-                sh 'docker build -t sudirlay/scss:test'
-                  sh 'docker build -t sudirlay/scss:test'
+                sh 'docker build -t sudirlay/scss:test .'
+                  sh 'docker push -t sudirlay/scss:test'
          }
        }
        
