@@ -1,11 +1,20 @@
 pipeline {
-   agent any 
+   agent any
+
     stages {
-        stage('Git SCM') {
+    
+        stage('GitSCM') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'SudirCreds', url: 'https://github.com/Songhai-Tech/SCSS.git']]])
- 
-                   }      
+         }      
+       }
+         
+       stage('BuildApp') {
+            steps {
+                sh 'docker build -t sudirlay/scss:test'
+                  sh 'docker build -t sudirlay/scss:test'
          }
-     }
+       }
+       
+    }
     }
